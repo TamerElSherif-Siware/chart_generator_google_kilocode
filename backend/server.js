@@ -119,7 +119,7 @@ app.get('/dashboard', (req, res) => {
   if (!req.user) {
     return res.redirect('/auth/google');
   }
-  res.send(`Hello, ${req.user.displayName}`);
+  res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
 });
 
 app.get('/logout', (req, res) => {

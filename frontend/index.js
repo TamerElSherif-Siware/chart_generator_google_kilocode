@@ -47,3 +47,6 @@ async function removeDomain(domain) {
 
 document.getElementById('addBtn').onclick = addDomain;
 fetchDomains();
+document.getElementById('logoutBtn').onclick = () => {
+  window.location = '/logout';
+};
