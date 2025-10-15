@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "passport": "*",
+    "passport-google-oauth20": "*",
+    "cookie-session": "*",
+    "express-session": "*",
+    "dotenv": "*",
+    "pg": "*"
+  }
+}

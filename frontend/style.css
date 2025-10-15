@@ -1,0 +1,12 @@
+/* Login page styles */
+body { font-family: Arial, sans-serif; text-align: center; margin-top: 5rem; }
+button { padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; }
+.loading { display: none; margin-top: 1rem; }
+#error { color: red; margin-top: 1rem; }
+
+/* Admin page styles */
+body { font-family: Arial, sans-serif; margin: 2rem; }
+div { margin-bottom: 1rem; }
+ul { list-style: none; padding: 0; }
+li { margin: 0.5rem 0; }
+button { margin-left: 0.5rem; }

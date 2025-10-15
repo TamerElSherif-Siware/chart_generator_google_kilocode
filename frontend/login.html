@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard</h1>
+    <button id="loginBtn">Login with Google</button>
+    <div id="loading" class="loading">Loading...</div>
+    <div id="error"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const errorMsg = params.get('error');
+        if (errorMsg) {
+          document.getElementById('error').textContent = decodeURIComponent(errorMsg);
+        }
+        const loginBtn = document.getElementById('loginBtn');
+        const loadingEl = document.getElementById('loading');
+        loginBtn.addEventListener('click', () => {
+          document.getElementById('error').textContent = '';
+          loadingEl.style.display = 'block';
+          window.location = '/auth/google';
+        });
+      });
+    </script>
+  </body>
+</html>
